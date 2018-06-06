@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <CheckBox
+        android:id="@+id/cbNugget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/cbFrite"
+        android:layout_marginEnd="74dp"
+        android:text="Nugget" />
+
+    <CheckBox
+        android:id="@+id/cbFrite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="-126dp"
+        android:layout_marginTop="188dp"
+        android:layout_toStartOf="@+id/txx"
+        android:text="Frite" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/TbNomclient"
+        android:layout_marginTop="18dp"
+        android:text="Plats :" />
+
+    <TextView
+        android:id="@+id/txx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="126dp"
+        android:layout_marginTop="136dp"
+        android:text="Supplément " />
+
+    <EditText
+        android:id="@+id/TbNomclient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView7"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="12dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="206dp"
+        android:layout_marginStart="18dp"
+        android:text="Nom du client :" />
+
+    <Button
+        android:id="@+id/BtAjout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="101dp"
+        android:layout_marginEnd="-140dp"
+        android:layout_toStartOf="@+id/textView5"
+        android:text="Ajouter" />
+
+    <CheckBox
+        android:id="@+id/cbPanini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/cbBurger"
+        android:layout_marginEnd="57dp"
+        android:text="Panini" />
+
+    <CheckBox
+        android:id="@+id/cbTacos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="-126dp"
+        android:layout_marginTop="96dp"
+        android:layout_toStartOf="@+id/txx"
+        android:text="Tacos" />
+
+    <CheckBox
+        android:id="@+id/cbKebab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/cbPanini"
+        android:layout_alignTop="@+id/cbTacos"
+        android:text="Kebab" />
+
+    <CheckBox
+        android:id="@+id/cbBurger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="-126dp"
+        android:layout_marginTop="47dp"
+        android:layout_toStartOf="@+id/txx"
+        android:text="Burger" />
+
+</RelativeLayout>
