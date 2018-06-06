@@ -13,12 +13,11 @@ import android.widget.Toast;
 
 public class commande_ajout extends AppCompatActivity {
 
-
     public CheckBox chekKebab, ChekPanini, CheckTacos, CheckBurger, CheckFrite, CheckNugget;
     Button btsajout;
     EditText tbnom;
     gestionBD bdd = new gestionBD(this);
-      String nom = "vide";
+    String nom = "vide";
     String plats = "vide";
     String supp = "vide";
     int prix = 0;
@@ -57,32 +56,20 @@ public class commande_ajout extends AppCompatActivity {
 
                  nom = tbnom.getText().toString();
 
-
-
                    commande lacommande = new commande(plats, supp, nom, prix);
 
-
-
                     try {
-
-
-
-
-
-                        boolean insertData = bdd.addCommande(lacommande);
+                        boolean insertData = bdd.addCommande(lacommande); // un booleen pour vérifié que ça a fonctionné
 
                         if (insertData) {
-                            toastMessage("Data Successfully Inserted!");
+                            toastMessage("Commande bien ajouté !");
                         } else {
-                            toastMessage("Something went wrong");
+                            toastMessage("Erreur lors de l'insertion");
                         }
-
-
 
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
-
 
             }});
 

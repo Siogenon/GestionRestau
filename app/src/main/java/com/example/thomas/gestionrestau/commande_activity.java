@@ -23,7 +23,6 @@ public class commande_activity extends AppCompatActivity {
         btajout = (Button) findViewById(R.id.btajout);
         btModif = (Button) findViewById(R.id.btModif);
 
-
         btajout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

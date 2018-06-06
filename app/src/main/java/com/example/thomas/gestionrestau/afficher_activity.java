@@ -11,10 +11,8 @@ import java.util.List;
 
 public class afficher_activity extends AppCompatActivity {
 
-
     gestionBD bdd = new gestionBD(this);
     public ListView laliste;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
