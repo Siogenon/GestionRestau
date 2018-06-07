@@ -25,19 +25,19 @@ https://github.com/Siogenon/gestionRestau/tree/master/app/src/main/java/com/exam
 - Prix calculé en fonction des options choisis.
 
 
-<img height="700" src = http://image.noelshack.com/fichiers/2018/23/4/1528352640-acceuil.png />
+<img height="500" src = http://image.noelshack.com/fichiers/2018/23/4/1528352640-acceuil.png />
 Acceuil (main_activity.xml)
 
-[alt text](http://image.noelshack.com/fichiers/2018/23/4/1528352644-ajout.png)
+<img height="500" src =http://image.noelshack.com/fichiers/2018/23/4/1528352644-ajout.png />
 Ajout (ajout_activity.xml)
 
-[alt text](http://image.noelshack.com/fichiers/2018/23/4/1528352644-recherchemodifsupp.png)
+<img height="500" src = http://image.noelshack.com/fichiers/2018/23/4/1528352644-recherchemodifsupp.png />
 Recherche/modification/delete (modify_activity.xml)
 
-[alt text](http://image.noelshack.com/fichiers/2018/23/4/1528352645-afficher.png) 
+<img height="500" src =http://image.noelshack.com/fichiers/2018/23/4/1528352645-afficher.png />
 Affichage ( afficher_activity.xml)
 
-[alt text](http://image.noelshack.com/fichiers/2018/23/4/1528352640-choix.png)
+<img height="500" src = http://image.noelshack.com/fichiers/2018/23/4/1528352640-choix.png />
 Choix ( activit_commande.xml)
 
 
