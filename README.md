@@ -2,12 +2,11 @@
 Application mobile 
 
 Android studio : Réalisation d'une application permettant l'ajout et la gestion de commandes.
-
-[![Watch the video]https://www.youtube.com/watch?v=rLzL5IhYaaE) Démo vidéo.
-
-
 *Les classes sont directements accecibles cliquant ici :
 https://github.com/Siogenon/gestionRestau/tree/master/app/src/main/java/com/example/thomas/gestionrestau 
+
+Démo vidéo.
+<iframe width="854" height="480" src="https://www.youtube.com/watch?v=rLzL5IhYaaE" frameborder="0" allowfullscreen></iframe>
 
 
 = > Fonctionnalités :
