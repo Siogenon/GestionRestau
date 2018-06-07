@@ -3,7 +3,7 @@ Application mobile
 
 Android studio : Réalisation d'une application permettant l'ajout et la gestion de commandes.
 
-https://www.youtube.com/watch?v=rLzL5IhYaaE Démo vidéo.
+[![Watch the video]https://www.youtube.com/watch?v=rLzL5IhYaaE) Démo vidéo.
 
 
 *Les classes sont directements accecibles cliquant ici :
@@ -25,20 +25,20 @@ https://github.com/Siogenon/gestionRestau/tree/master/app/src/main/java/com/exam
 - Prix calculé en fonction des options choisis.
 
 
-<img height="500" src = http://image.noelshack.com/fichiers/2018/23/4/1528352640-acceuil.png />
-Acceuil (main_activity.xml)
+<img height="200" src = http://image.noelshack.com/fichiers/2018/23/4/1528352640-acceuil.png />Acceuil (main_activity.xml)
 
-<img height="500" src =http://image.noelshack.com/fichiers/2018/23/4/1528352644-ajout.png />
-Ajout (ajout_activity.xml)
 
-<img height="500" src = http://image.noelshack.com/fichiers/2018/23/4/1528352644-recherchemodifsupp.png />
-Recherche/modification/delete (modify_activity.xml)
+<img height="200" src = http://image.noelshack.com/fichiers/2018/23/4/1528352644-ajout.png />Ajout (ajout_activity.xml)
 
-<img height="500" src =http://image.noelshack.com/fichiers/2018/23/4/1528352645-afficher.png />
-Affichage ( afficher_activity.xml)
 
-<img height="500" src = http://image.noelshack.com/fichiers/2018/23/4/1528352640-choix.png />
-Choix ( activit_commande.xml)
+<img height="200" src = http://image.noelshack.com/fichiers/2018/23/4/1528352644-recherchemodifsupp.png />Recherche/modification/delete (modify_activity.xml)
+
+
+<img height="200" src = http://image.noelshack.com/fichiers/2018/23/4/1528352645-afficher.png />Affichage ( afficher_activity.xml)
+
+
+<img height="200" src =  http://image.noelshack.com/fichiers/2018/23/4/1528352640-choix.png />Choix ( activit_commande.xml)
+
 
 
 
