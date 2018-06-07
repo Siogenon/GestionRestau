@@ -6,8 +6,7 @@ Android studio : Réalisation d'une application permettant l'ajout et la gestion
 https://github.com/Siogenon/gestionRestau/tree/master/app/src/main/java/com/example/thomas/gestionrestau 
 
 Démo vidéo.
-<iframe width="854" height="480" src="https://www.youtube.com/watch?v=rLzL5IhYaaE" frameborder="0" allowfullscreen></iframe>
-
+<iframe width="854" height="480" src="https://www.youtube.com/embed/rLzL5IhYaaE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 = > Fonctionnalités :
 
