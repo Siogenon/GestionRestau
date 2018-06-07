@@ -6,6 +6,7 @@ Android studio : Réalisation d'une application permettant l'ajout et la gestion
 https://github.com/Siogenon/gestionRestau/tree/master/app/src/main/java/com/example/thomas/gestionrestau 
 
 
+* Cliquez-ici pour la démo vidéo :
 [![Démo vidéo](https://img.youtube.com/vi/rLzL5IhYaaE/0.jpg)](https://www.youtube.com/watch?v=rLzL5IhYaaE)
 
 
