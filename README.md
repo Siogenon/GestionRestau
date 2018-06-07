@@ -25,7 +25,7 @@ https://github.com/Siogenon/gestionRestau/tree/master/app/src/main/java/com/exam
 - Prix calculé en fonction des options choisis.
 
 
-[alt text](http://image.noelshack.com/fichiers/2018/23/4/1528352640-acceuil.png) 
+[alt text](http://image.noelshack.com/fichiers/2018/23/4/1528352640-acceuil.png?raw=true) 
 Acceuil (main_activity.xml)
 
 [alt text](http://image.noelshack.com/fichiers/2018/23/4/1528352644-ajout.png)
