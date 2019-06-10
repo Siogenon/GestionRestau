@@ -36,13 +36,13 @@ public class modifier_activity  extends AppCompatActivity {
         leSupp = (EditText) findViewById(R.id.tbSupp);
         lePrix = (EditText) findViewById(R.id.tbPrix);
 
-        btRecherche.setOnClickListener(new View.OnClickListener() { //  CLIQUE BOUTON RECHERCHE
+     btRecherche.setOnClickListener(new View.OnClickListener() { //  CLIQUE BOUTON RECHERCHE
             @Override
             public void onClick(View v) {
-                lenomR = TBlenom.getText().toString(); // on récupère la valeur saisie pour la recherche
+                lenomR = TBlenom.getText().toString(); // on récupère la valeur saisie pour la recherche 
                 String name = lenomR;
 
-                Cursor data = bdd.getunecommande(name); // curseur encore
+                Cursor data = bdd.getunecommande(name); // curseur ( pour manipulé la base de données)
 
                 while (data.moveToNext()) {  // on parcours
 
@@ -54,7 +54,7 @@ public class modifier_activity  extends AppCompatActivity {
                 }
             }
         });
-        btModifier.setOnClickListener(new View.OnClickListener() { // CLIQUE DE MODIFICATION
+     btModifier.setOnClickListener(new View.OnClickListener() { // CLIQUE DE MODIFICATION
             @Override
             public void onClick(View v) {
                 String anciensnom = TBlenom.getText().toString();
@@ -63,10 +63,10 @@ public class modifier_activity  extends AppCompatActivity {
                 getSupp = leSupp.getText().toString();
                 getprix = lePrix.getText().toString();
 
-                lebonprix = Float.parseFloat(getprix); // on convertie en float sinon ça bug
+                lebonprix = Float.parseFloat(getprix); // on convertie en float sinon bug
                 try {
-                    bdd.modifiercommande(anciensnom,getplats, getSupp, getnom, lebonprix); // On envoie tout ça en paramètre
-                    toastMessage("La commande a bien été modifié ");
+                    bdd.modifiercommande(anciensnom,getplats, getSupp, getnom, lebonprix); // On envoie tout ça en paramètres
+                    toastMessage("La commande a bien été modifier ");
 
                 } catch (Exception e) {
                     e.printStackTrace();
@@ -86,11 +86,10 @@ public class modifier_activity  extends AppCompatActivity {
                     int leid = (data.getInt(0)); // on récupère l'id de nom tapé dans la recherche
                     bdd.supprimerUnecommande(leid); // leid a bien reçu l'id, on le met en paramère pour le delete.
                     Toast.makeText(getApplicationContext(), "Commande bien supprimé, id : " + leid, Toast.LENGTH_LONG).show();
-                }
-                   }
+                                          }
+                                                                   }
     });
-   }
-
+    }
     private void toastMessage(String message){
         Toast.makeText(this,message, Toast.LENGTH_SHORT).show();
     }
