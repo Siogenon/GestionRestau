@@ -19,14 +19,12 @@ public class commande {
      // constructeur basique
      public commande (int idC, String platC, String supplementC, String nom, float prixC  )
      {
-
          this.idC = idC;
          this.platC=platC;
          this.supplementC=supplementC;
          this.nom=nom;
          this.prixC=prixC;
      }
-
 
      public int getId(){return idC;}
      public void setId(int idc){this.idC=idc;}
@@ -44,7 +42,7 @@ public class commande {
      public void setPrixC(float prixC){this.prixC = prixC;}
 
 
-
+       //Fonction pour récupéré et convertir les données entrées, pour reqête SQL.
     public String	toString(){
         return "Id :	"+	this.getId()	+",	plat :	" +	this.getPlatc()	+	", supplement : " +
                 this.getSupplementC() + ", nom :  " + this.getNom() + ", prix :  " + this.getPrixC();
