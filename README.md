@@ -1,14 +1,6 @@
 # gestionRestau
 Application mobile 
 
-Android studio : Réalisation d'une application permettant l'ajout et la gestion de commandes.
-
-- Les classes sont directements accecibles cliquant ici :
-
-https://github.com/Siogenon/gestionRestau/tree/master/app/src/main/java/com/example/thomas/gestionrestau 
-
-
-
 
 
 
@@ -16,6 +8,22 @@ https://github.com/Siogenon/gestionRestau/tree/master/app/src/main/java/com/exam
 
 * Cliquez-ici pour la démo vidéo :
 [![Démo vidéo](https://img.youtube.com/vi/rLzL5IhYaaE/0.jpg)](https://www.youtube.com/watch?v=rLzL5IhYaaE)
+
+
+
+
+
+
+
+
+
+
+Android studio : Réalisation d'une application permettant l'ajout et la gestion de commandes.
+
+- Les classes sont directements accecibles cliquant ici :
+
+https://github.com/Siogenon/gestionRestau/tree/master/app/src/main/java/com/example/thomas/gestionrestau 
+
 
 
 = > Fonctionnalités :
