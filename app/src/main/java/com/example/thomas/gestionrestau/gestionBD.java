@@ -8,8 +8,8 @@ import android.database.sqlite.SQLiteOpenHelper;
 import java.util.ArrayList;
 import java.util.List;
 
-public class gestionBD extends SQLiteOpenHelper {
 
+public class gestionBD extends SQLiteOpenHelper {
 
     private static final String TABLE_NAME = "commande";
     private static final String KEY = "id";
@@ -25,12 +25,11 @@ public class gestionBD extends SQLiteOpenHelper {
     }
 
     @Override
-    public void onCreate(SQLiteDatabase	db)	{ // Crée la base au démarrage
+    public void onCreate(SQLiteDatabase	db)	{ // Permet de créée la base de données au démarrage de l'application
         String	CREATE_COMMANDE_TABLE	= "CREATE TABLE " + TABLE_NAME + " (" + KEY + " INTEGER PRIMARY KEY AUTOINCREMENT, " + PLAT + " TEXT, " + SUPP + " TEXT," + NOM + " TEXT, " + PRIX + " FLOAT " + " );";
         db.execSQL(CREATE_COMMANDE_TABLE);
         db.execSQL("INSERT INTO commande (plat, supplement, nom, prix)	"+ " VALUES ('panini', 'frite', 'genon', '04')");
     }
-
 
     @Override
     public void onUpgrade(SQLiteDatabase	db,	int oldVersion,	int newVersion)	{
@@ -56,7 +55,6 @@ public class gestionBD extends SQLiteOpenHelper {
             return true;
         }
     }
-
 
     public List<commande> getLesCommandes()	{ // On retourne toute les commandes dans une List
         List<commande>	lescommandes	=	new ArrayList<commande>();
