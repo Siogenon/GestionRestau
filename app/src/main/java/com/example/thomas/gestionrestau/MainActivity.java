@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
          public void onClick(View v) {
              if (username.getText().toString().equals("admin") && password.getText().toString().equals("admin")) {
                  Intent intent = new Intent(MainActivity.this, commande_activity.class);
-                 startActivity(intent);  // On démarre l'activité si les mdp et psd tapé sont les bn
+                 startActivity(intent);  // On démarre l'activité si les mot de pass et pseudos tapés correspondent a ceux ci-dessus
 
              } else {
                  Toast.makeText(getApplicationContext(), "Mauvais identifiants", Toast.LENGTH_SHORT).show();
