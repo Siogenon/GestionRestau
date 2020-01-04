@@ -36,17 +36,17 @@ public class modifier_activity  extends AppCompatActivity {
         leSupp = (EditText) findViewById(R.id.tbSupp);
         lePrix = (EditText) findViewById(R.id.tbPrix);
 
-     btRecherche.setOnClickListener(new View.OnClickListener() { //  CLIQUE BOUTON RECHERCHE
+     btRecherche.setOnClickListener(new View.OnClickListener() { 
             @Override
             public void onClick(View v) {
-                lenomR = TBlenom.getText().toString(); // on récupère la valeur saisie pour la recherche 
+                lenomR = TBlenom.getText().toString(); 
                 String name = lenomR;
 
-                Cursor data = bdd.getunecommande(name); // curseur ( pour manipulé la base de données)
+                Cursor data = bdd.getunecommande(name); 
 
-                while (data.moveToNext()) {  // on parcours
+                while (data.moveToNext()) {  
 
-                    lePlat.setText(data.getString(1)); // on attributs a chaque textbox la valeur adéquate
+                    lePlat.setText(data.getString(1)); // 
                     leSupp.setText(data.getString(2));
                     tbNom.setText(data.getString(3));
                     lePrix.setText(String.valueOf(data.getFloat(4)));
@@ -54,18 +54,18 @@ public class modifier_activity  extends AppCompatActivity {
                 }
             }
         });
-     btModifier.setOnClickListener(new View.OnClickListener() { // CLIQUE DE MODIFICATION
+     btModifier.setOnClickListener(new View.OnClickListener() { 
             @Override
             public void onClick(View v) {
                 String anciensnom = TBlenom.getText().toString();
-                getnom = tbNom.getText().toString();   // On attribut le contenu des textbox dans des variables
+                getnom = tbNom.getText().toString();   
                 getplats = lePlat.getText().toString();
                 getSupp = leSupp.getText().toString();
                 getprix = lePrix.getText().toString();
 
-                lebonprix = Float.parseFloat(getprix); // on convertie en float sinon bug
+                lebonprix = Float.parseFloat(getprix); 
                 try {
-                    bdd.modifiercommande(anciensnom,getplats, getSupp, getnom, lebonprix); // On envoie tout ça en paramètres
+                    bdd.modifiercommande(anciensnom,getplats, getSupp, getnom, lebonprix); 
                     toastMessage("La commande a bien été modifier ");
 
                 } catch (Exception e) {
@@ -73,18 +73,18 @@ public class modifier_activity  extends AppCompatActivity {
                 }
             }
         });
-        btSupprimer.setOnClickListener(new View.OnClickListener() { // BOUTTON DE SUPPRESSION
+        btSupprimer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 lenomR = TBlenom.getText().toString();
 
-                Cursor data = bdd.getidcommande(lenomR); // curseur pour récupéré la requête
+                Cursor data = bdd.getidcommande(lenomR); 
 
-                while (data.moveToNext()) { // on cherche a travers le resultat via curseur
+                while (data.moveToNext()) { 
 
-                    int leid = (data.getInt(0)); // on récupère l'id de nom tapé dans la recherche
-                    bdd.supprimerUnecommande(leid); // leid a bien reçu l'id, on le met en paramère pour le delete.
+                    int leid = (data.getInt(0));
+                    bdd.supprimerUnecommande(leid); 
                     Toast.makeText(getApplicationContext(), "Commande bien supprimé, id : " + leid, Toast.LENGTH_LONG).show();
                                           }
                                                                    }
